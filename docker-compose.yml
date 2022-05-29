@@ -1,0 +1,11 @@
+services:
+        main-frontend:
+                build: Main-Frontend
+                image: main/frontend:v0
+                ports:
+                        - "80:8080"
+        main-backend:
+                build: Main-Backend
+                image: main/backend:v0
+                ports:
+                        - "8000:8000"
